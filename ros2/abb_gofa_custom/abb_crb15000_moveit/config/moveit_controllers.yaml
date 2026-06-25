@@ -1,0 +1,25 @@
+trajectory_execution:
+  # EGM-Joint cap is 10°/s in RAPID — much slower than MoveIt's plan duration.
+  # Bump scaling so MoveIt waits for slow physical execution.
+  allowed_execution_duration_scaling: 50.0
+  allowed_goal_duration_margin: 5.0
+  allowed_start_tolerance: 0.05
+  trajectory_duration_monitoring: true
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+moveit_simple_controller_manager:
+  controller_names:
+    - joint_trajectory_controller
+
+  joint_trajectory_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - joint_1
+      - joint_2
+      - joint_3
+      - joint_4
+      - joint_5
+      - joint_6

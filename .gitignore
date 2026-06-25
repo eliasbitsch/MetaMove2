@@ -1,0 +1,108 @@
+# ── Unity ─────────────────────────────────────────────────────────────
+# Matches nested Unity projects (unity-quest/, GoHolo/ABBGoFa_HoloLens2/, etc.)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+.utmp/
+[Aa]ssets/AssetStoreTools*
+[Aa]ssets/Plugins/Editor/JetBrains*
+Assets/**/*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+
+# Unity IDE / generated project files
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+ExportedObj/
+.consulo/
+*.apk
+*.aab
+*.unitypackage
+*.app
+crashlytics-build.properties
+
+# Unity recovery folders
+[Aa]ssets/_Recovery/
+_Recovery/
+
+# ── Visual Studio / Rider / VS Code ──────────────────────────────────
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Node / Web dashboards ────────────────────────────────────────────
+node_modules/
+dist/
+.pnp/
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next/
+out/
+
+# ── Docker / ROS build artefacts ─────────────────────────────────────
+ros2/build/
+ros2/install/
+ros2/log/
+docker/volumes/
+
+# ── External references / large archives ────────────────────────────
+# Third-party sources live outside the repo — fetched / unzipped locally
+third_party/
+
+# ── Staging area ─────────────────────────────────────────────────────
+.staging/
+
+# ── Secrets / credentials ────────────────────────────────────────────
+# bHaptics App-ID + API-Key (per-developer, never commit)
+**/bhaptics.json
+**/BhapticsSettings.asset
+**/BhapticsSettings.asset.meta
+secrets.local.*
+
+# ── OS / misc ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.bak
+
+# ── Claude Code (not published) ──────────────────────────────────────
+.claude/
+
+# Python bytecode (global)
+__pycache__/
+*.pyc
+
+# RobotStudio local VC workspace (auto-generated, per-developer)
+robotstudio/station/
+
+# Local data dumps — GoFa controller dumps + lab measurement runs (not versioned)
+/dumps/
+# Lab measurement runs anywhere in the tree
+lab_runs/
+
+# Old staging Unity scratch code (legacy)
+.staging/
